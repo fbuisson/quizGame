@@ -1,0 +1,27 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/lobby/pic/bc.webp);
+
+    height: 100vh;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.buttonDifficultyContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
