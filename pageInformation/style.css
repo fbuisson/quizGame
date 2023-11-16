@@ -1,38 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin : 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    border: 2px solid red;
 }
-body{
+
+body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
     background-image: url(fondpapier.png);
     background-attachment: fixed;
     background-size: cover;
-    color: #334145;
+
     font-family: Montserrat;
-
-}
-h1 {
-    margin-bottom: 60px;
-    font-size: 50px;
-}
-
-p {
-    width: 100%;
-    height: 200px;
-    font-size: 25px;
-    display: flex;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em
 
 }
 
@@ -45,13 +28,56 @@ p {
     border-left: 3px solid #00475D;
     border-radius: 6px;
     color: white;
-    font-size: 25px;
-    display: inline;
-    text-align: center;
-    padding: 14px 40px;
 }
 
 .btn:active {
     border-bottom: 3px solid #00475D;
     border-left: 1px solid #00475D;
+}
+
+.accessibility {
+
+    height: 100%;
+    text-align: center;
+
+
+    color: #334145;
+
+    & h1 {
+        width: 100%;
+        margin: 5% 0 5% 0;
+        font-size: 30px;
+    }
+
+    & p {
+        padding: 12px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    & .accessible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 14%;
+
+        & button {
+            font-size: 12px;
+            width: 100px;
+            height: 30px;
+        }
+
+        & button:nth-child(1) {
+            margin-right: 5%;
+        }
+
+        & button:nth-child(2) {
+            margin-left: 5%;
+        }
+    }
+
+
+
 }
