@@ -1,71 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 body {
     background-image: url(/pageInformation/fondpapier.png);
     background-attachment: fixed;
     background-size: cover;
-    margin-bottom: 30px;
-    font-size: 50px;
-    color: #334145;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-family: Montserrat
-}
-
-h1 {
-    margin: 30px;
-    font-size: 30px;
-    color: #334145;
-    height: 100vh;
-    display: inline;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-
-}
-h1 > span {
-    color: #FFA630;
-}
-
-p {
-    width: 250px;
-    height: 200px;
-    font-size: 25px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-
-
 }
 
 .btn {
     cursor: pointer;
     background: #037599;
-    border-top: none;
-    border-right: none;
     border-bottom: 6px solid #00475D;
     border-left: 3px solid #00475D;
     border-radius: 6px;
     color: white;
-    font-size: 25px;
-    display: flex;
-    text-align: center;
-    padding: 14px 40px;
+    border-top: none;
+    border-right: none;
 }
 
 .btn:active {
     border-bottom: 3px solid #00475D;
     border-left: 1px solid #00475D;
+}
+
+.endContainer {
+    height: 100vh;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #334145;
+
+    & h1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        height: 15%;
+        font-size: 30px;
+        color: #334145;
+
+        & span {
+            color: #FFA630;
+        }
+    }
+
+    & p {
+        height: 15%;
+        font-size: 25px;
+    }
+
+    & div {
+        height: 60%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & button {
+
+            margin-top: 20%;
+            height: 30px;
+            width: 100px;
+        }
+    }
+
+
 }

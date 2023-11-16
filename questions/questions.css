@@ -3,6 +3,10 @@
     src: url();
 }
 
+* {
+    border: 1px solid red;
+}
+
 body {
     height: 100vh;
     text-align: center;
@@ -23,39 +27,110 @@ body {
     border-left: 1px solid #00475D;
 }
 
-* {
-    border: 1px solid red;
-}
-
-.questionContainer {
+.questionsContainer {
 
     text-align: center;
-
+    height: 100vh;
 }
 
 header {
+    height: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
 
-    margin-right: 12px;
-}
-
-.categoryConatiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: salmon;
-    color: white;
-
     & p {
-        margin-left: 20px;
+        font-size: 14px;
+        margin: 4px;
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .categoryConatiner {
+        height: 40px;
+        width: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #F9A587;
+        color: white;
+
+        border-radius: 6px;
+
+        & p {
+            margin-left: 20px;
+        }
+    }
+
+    & .timerBar {
+        margin: 20px;
+        width: 90%;
+        height: 9px;
+        background: #D9D8D8;
+        border-radius: 15px;
+
+        position: relative;
+    }
+
+    & .timerBar::before {
+        content: "";
+        position: absolute;
+
+        background: #FEA631;
+        border-radius: 15px;
+        height: 7px;
+        width: 80%;
+        top: 1px;
+        left: 1px;
+
+    }
+
+    & .questionContainer {
+        width: 100%;
+    }
+}
+
+.answerContainer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-row: 1fr 1fr;
+
+    & button {
+        margin: 0 20px 20px 20px;
+        height: 50px;
+        width: 200px;
+        text-align: left;
+
+
+        & i {
+            margin-right: 6px;
+        }
+    }
+}
+
+
 .temporaire {
     position: absolute;
+    bottom: 5%;
+    left: 5%;
     background: salmon;
+}
+
+.sport {
+    background: #F9A587;
+}
+
+
+
+button.red {
+    background: #7B0303;
 }
