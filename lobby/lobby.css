@@ -36,14 +36,14 @@ body {
 
 .titleAndBannerContainer {
     /* text-align: center; */
-    height: 40%;
+    height: 30%;
 
     & h2 {
         color: #949594;
     }
 
     & img {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -52,9 +52,8 @@ body {
     position: relative;
     height: 40%;
 
-    & #btnStart {
-
-        font-size: 20px;
+    & button {
+        font-size: 14px;
         height: 30px;
         width: 80px;
     }
