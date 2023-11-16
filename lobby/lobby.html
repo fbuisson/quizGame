@@ -11,27 +11,31 @@
 </head>
 
 <body>
-    <header>
-        <h1>Quizz</h1> <img src="/lobby/pic/light-bulb.webp" alt="light bulb image">
-    </header>
-    <main>
-        <h2>Cultura genralis</h2>
-        <img src="/lobby/pic/category-banner.webp" alt="catégories: nature,histoire,géographie,sport,cinéma">
-    </main>
-    <footer>
-        <button class="btn">Jouer</button>
-        <div class="buttonDifficultyContainer">
-            <label for="">Facile
-                <button id="easy" class="btnDifficulty"></button>
-            </label>
-            <label for="">Moyen
-                <button id="medium" class="btnDifficulty"></button>
-            </label>
-            <label for="">Difficile
-                <button id="hard" class="btnDifficulty"></button>
-            </label>
+    <section class="lobbyContainer">
+        <div class="quizContainer">
+            <h1><span id="titleQ">Q</span>uizz</h1> <img src="/lobby/pic/light-bulb.webp" alt="light bulb image">
+        </div class="quizContainer">
+
+        <div class="titleAndBannerContainer">
+            <h2>Cultura genralis</h2>
+            <img src="/lobby/pic/category-banner.webp" alt="catégories: nature,histoire,géographie,sport,cinéma">
         </div>
-    </footer>
+
+        <div class="btnStartContainer">
+            <button class="btn" id="btnStart">Jouer</button>
+            <div class="btnDifficultyContainer">
+                <label for="easy">Facile
+                    <button id="easy" class="btnDifficulty"></button>
+                </label>
+                <label for="medium">Moyen
+                    <button id="medium" class="btnDifficulty"></button>
+                </label>
+                <label for="hard">Difficile
+                    <button id="hard" class="btnDifficulty"></button>
+                </label>
+            </div>
+        </div>
+    </section>
 
 
     <script src=''></script>

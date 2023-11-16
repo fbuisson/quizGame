@@ -1,27 +1,119 @@
-* {
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-
 body {
-    background: url(/lobby/pic/bc.webp);
-
     height: 100vh;
-    overflow: hidden;
-
     text-align: center;
 }
 
-.buttonDifficultyContainer {
+* {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
 
+.lobbyContainer {
+    background: url(/lobby/pic/bc.webp);
+
+
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.quizContainer {
+
+    height: 20%;
+    margin: 20px 0 0 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
+    align-items: flex-start;
 
-    & label {
+    & h1 {
+        color: #949594;
+
+        & span {
+            color: #FAAA42;
+        }
+    }
+}
+
+.titleAndBannerContainer {
+    /* text-align: center; */
+    height: 40%;
+
+    & h2 {
+        color: #949594;
+    }
+
+    & img {
+        width: 80%;
+    }
+}
+
+.btnStartContainer {
+
+    position: relative;
+    height: 40%;
+
+    & #btnStart {
+
+        font-size: 20px;
+        height: 30px;
+        width: 80px;
+    }
+
+    & .btnDifficultyContainer {
+
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+
+        height: 50%;
+
+        & label {
+            width: 80px;
+            height: 60px;
+            margin: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & .btnDifficulty {
+
+                cursor: pointer;
+                position: relative;
+                height: 15px;
+                width: 15px;
+                margin: 6px;
+
+                background: #FEA632;
+                border-radius: 50%;
+
+                border-top: none;
+                border-right: none;
+                border-bottom: 3px solid #CF7603;
+                border-left: 2px solid #CF7603;
+
+            }
+
+            & .btnDifficulty:active {
+                border-bottom: 1px solid #CF7603;
+                border-left: 1px solid #CF7603;
+            }
+        }
     }
+}
+
+.btn {
+    cursor: pointer;
+    background: #037599;
+    border-top: none;
+    border-right: none;
+    border-bottom: 6px solid #00475D;
+    border-left: 3px solid #00475D;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn:active {
+    border-bottom: 3px solid #00475D;
+    border-left: 1px solid #00475D;
 }

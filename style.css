@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'x';
+    src: url();
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    background: #037599;
+    border-bottom: 6px solid #00475D;
+    border-left: 3px solid #00475D;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn:active {
+    border-bottom: 3px solid #00475D;
+    border-left: 1px solid #00475D;
+}
