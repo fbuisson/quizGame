@@ -1,9 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const { log } = require('console');
 const app = express();
-const port = 3000; // Vous pouvez choisir un autre port si nécessaire
+const port = 3000; 
 
+let questions = [];
+let points = 0;
+
+app.use(express.json());
 app.use(cors());
 
 app.get('/getQuestions', (req, res) => {
@@ -19,6 +24,12 @@ app.get('/getQuestions', (req, res) => {
             res.status(500).send("Erreur lors de l'analyse du JSON");
         }
     });
+});
+
+app.post('/saveQuestions', (req, res) => {
+    questions = req.body; 
+    console.log(req.body);
+    res.send("Questions sauvegardées avec succès");
 });
 
 app.listen(port, () => {
