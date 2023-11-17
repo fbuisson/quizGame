@@ -1,4 +1,4 @@
-const category = "nature"
+const category = "sport"
 const categoryContainer = document.querySelector('div.categoryContainer');
 
 console.log(categoryContainer)
