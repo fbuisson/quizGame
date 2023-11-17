@@ -1,25 +1,181 @@
-@font-face {
-    font-family: 'x';
-    src: url();
+:root {
+    --text-color: #334145;
+    --text-light-color: #F7EFE8;
+    --blue-light-color: #037AA0;
+    --blue-dark-color: #00475d;
+    --blue-color: #027499;
+
+    --yellow-color: #e9982e;
+    --yellow-light-color: #f5a031;
+    --yellow-dark-color: #b47625;
+
+    --sport-logo-color: #F9A587;
+
 }
 
 body {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+
+    background-image: url("../assets/img/background-paper.png");
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.flex-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.hero {
     height: 100vh;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    background: url(/doc/background/bc.webp);
-
+    position: relative;
 }
 
-.btn {
+.hero img {
+    width: 90%;
+}
+
+.hero .title {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 90px;
+}
+
+.hero .title span {
+    color: var(--yellow-light-color);
+}
+
+/***** BUTTONS *****/
+
+button {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
-    background: #037599;
-    border-bottom: 6px solid #00475D;
-    border-left: 3px solid #00475D;
-    border-radius: 6px;
-    color: white;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--text-light-color);
+    text-transform: uppercase;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
 }
 
-.btn:active {
-    border-bottom: 3px solid #00475D;
-    border-left: 1px solid #00475D;
+button.btn-play {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+button.btn-play span {
+    letter-spacing: 6px;
+    margin-right: -6px;
+}
+
+button.btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button.btn-square {
+    border-radius: 0.75em;
+    padding: 1.25em 2em;
+    background: var(--blue-color);
+}
+
+button.btn-square::before {
+    transform: translate3d(0, 0.75em, -1em);
+    background: var(--blue-dark-color);
+}
+
+button.btn-square:hover {
+    background: var(--blue-light-color);
+    transform: translate(0, 0.25em);
+}
+
+button.btn-square:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-square.active {
+    background: var(--blue-dark-color);
+    transform: translate(0em, 0.75em);
+}
+
+button.btn-square.active::before {
+    transform: translate3d(0, 0, -1em);
+}
+
+button.btn-circle {
+    border-radius: 50%;
+    padding: 0.75em 1em;
+    margin-top: 1em;
+    background: var(--yellow-color);
+}
+
+button.btn-circle::before {
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    transform: translate3d(0, 0.75em, -1em);
+    background: var(--yellow-dark-color);
+}
+
+button.btn-circle:hover {
+    background: var(--yellow-light-color);
+    transform: translate(0, 0.25em);
+}
+
+button.btn-circle:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-circle.active {
+    background: var(--yellow-dark-color);
+    transform: translate(0em, 0.75em);
+}
+
+button.btn-circle.active::before {
+
+    border-radius: 50%;
+    transform: translate3d(0, 0, -1em);
+}
+
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px;
 }

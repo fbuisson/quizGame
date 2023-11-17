@@ -1,10 +1,16 @@
-@font-face {
-    font-family: 'x';
-    src: url();
-}
+:root {
+    --text-color: #334145;
+    --text-light-color: #F7EFE8;
+    --blue-light-color: #037AA0;
+    --blue-dark-color: #00475d;
+    --blue-color: #027499;
 
-* {
-    border: 1px solid red;
+    --yellow-color: #e9982e;
+    --yellow-light-color: #f5a031;
+    --yellow-dark-color: #b47625;
+
+    --sport-logo-color: #F9A587;
+
 }
 
 body {
@@ -13,18 +19,65 @@ body {
     background: url(/doc/background/bc.webp);
 }
 
-.btn {
+
+button {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
-    background: #037599;
-    border-bottom: 6px solid #00475D;
-    border-left: 3px solid #00475D;
-    border-radius: 6px;
-    color: white;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--text-light-color);
+    text-transform: uppercase;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
 }
 
-.btn:active {
-    border-bottom: 3px solid #00475D;
-    border-left: 1px solid #00475D;
+
+button.btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button.btn-square {
+    border-radius: 0.75em;
+    padding: 1.25em 2em;
+    background: var(--blue-color);
+}
+
+button.btn-square::before {
+    transform: translate3d(0, 0.75em, -1em);
+    background: var(--blue-dark-color);
+}
+
+button.btn-square:hover {
+    background: var(--blue-light-color);
+    transform: translate(0, 0.25em);
+}
+
+button.btn-square:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-square.active {
+    background: var(--blue-dark-color);
+    transform: translate(0em, 0.75em);
+}
+
+button.btn-square.active::before {
+    transform: translate3d(0, 0, -1em);
 }
 
 .questionsContainer {
@@ -39,11 +92,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+}
 
-    & p {
-        font-size: 14px;
-        margin: 4px;
-    }
+header p {
+    font-size: 14px;
+    margin: 4px;
 }
 
 main {
@@ -51,86 +104,89 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    & .categoryConatiner {
-        height: 40px;
-        width: 200px;
+.categoryConatiner {
+    height: 40px;
+    width: 200px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        background: #F9A587;
-        color: white;
+    background: #F9A587;
+    color: white;
 
-        border-radius: 6px;
+    border-radius: 6px;
 
-        & p {
-            margin-left: 20px;
-        }
-    }
+}
 
-    & .timerBar {
-        margin: 20px;
-        width: 90%;
-        height: 9px;
-        background: #D9D8D8;
-        border-radius: 15px;
+p {
+    margin-left: 20px;
+}
 
-        position: relative;
-    }
 
-    & .timerBar::before {
-        content: "";
-        position: absolute;
+.timerBar {
+    margin: 20px;
+    width: 90%;
+    height: 9px;
+    background: #D9D8D8;
+    border-radius: 15px;
 
-        background: #FEA631;
-        border-radius: 15px;
-        height: 7px;
-        width: 80%;
-        top: 1px;
-        left: 1px;
+    position: relative;
+}
 
-    }
+.timerBar::before {
+    content: "";
+    position: absolute;
 
-    & .questionContainer {
-        width: 100%;
-    }
+    background: #FEA631;
+    border-radius: 15px;
+    height: 7px;
+    width: 80%;
+    top: 1px;
+    left: 1px;
+
+}
+
+.questionContainer {
+    width: 100%;
+}
+
+i {
+    margin-right: 6px;
 }
 
 .answerContainer {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-row: 1fr 1fr;
 
-    & button {
-        margin: 0 20px 20px 20px;
-        height: 50px;
-        width: 200px;
-        text-align: left;
-
-
-        & i {
-            margin-right: 6px;
-        }
-    }
 }
-
 
 .temporaire {
     position: absolute;
     bottom: 5%;
     left: 5%;
-    background: salmon;
+    background: #F9A587;
 }
 
 .sport {
     background: #F9A587;
 }
 
+.history {
+    background: #F9A587;
+}
 
+.geo {
+    background: #F9A587;
+}
 
-button.red {
-    background: #7B0303;
+.cinema {
+    background: #F9A587;
+}
+
+.nature {
+    background: #F9A587;
 }
