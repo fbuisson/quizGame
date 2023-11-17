@@ -1,0 +1,296 @@
+{
+    "questions" : {
+        "facile": [
+            {
+                "category": "histoire",
+                "question": "Quel événement historique a marqué le début de la Première Guerre mondiale en 1914?",
+                "options": ["L'assassinat de l'archiduc François-Ferdinand", "La bataille de Waterloo", "La Révolution française", "La Guerre de Sécession"],
+                "answer": "L'assassinat de l'archiduc François-Ferdinand"
+              },
+              {
+                "category": "histoire",
+                "question": "Quel événement a marqué la fin de la Seconde Guerre mondiale en Europe?",
+                "options": ["La bataille de Stalingrad", "Le Débarquement de Normandie", "La capitulation du Japon", "La capitulation de l'Allemagne"],
+                "answer": "La capitulation de l'Allemagne"
+              },
+              {
+        
+                "category": "histoire",
+                "question": "Quelle civilisation a construit les pyramides de Gizeh?",
+                "options": ["Civilisation romaine", "Civilisation grecque", "Civilisation égyptienne", "Civilisation mésopotamienne"],
+                "answer": "Civilisation égyptienne"
+              },
+              {
+
+                "category": "cinema",
+                "question": "Quel film a remporté l'Oscar du meilleur film en 1994?",
+                "options": ["Forrest Gump", "Titanic", "Braveheart", "Le Silence des agneaux"],
+                "answer": "Forrest Gump"
+              },
+              {
+        
+                "category": "cinema",
+                "question": "Quel film a remporté l'Oscar du meilleur film en 2020?",
+                "options": ["1917", "Parasite", "Joker", "Once Upon a Time in Hollywood"],
+                "answer": "Parasite"
+              },
+              {
+        
+                "category": "cinema",
+                "question": "A quel célèbre film correspond cette musique?",
+                "options": ["Titanic", "E.T", "Inception", "Fight Club"],
+                "answer": "Titanic"
+              },      
+              {
+                "category": "sport",
+                "question": "Quel joueur de football a remporté le Ballon d'Or en 2021?",
+                "options": ["Lionel Messi", "Cristiano Ronaldo", "Robert Lewandowski", "Mohamed Salah"],
+                "answer": "Lionel Messi"
+              },
+              {
+    
+                "category": "sport",
+                "question": "Quel joueur de tennis a remporté le plus de titres du Grand Chelem en simple chez les femmes?",
+                "options": ["Serena Williams", "Maria Sharapova", "Venus Williams", "Steffi Graf"],
+                "answer": "Serena Williams"
+              },
+              {
+                "category": "sport",
+                "question": "Quelle équipe a remporté la Coupe du Monde de la FIFA en 2014?",
+                "options": ["Allemagne", "Brésil", "Argentine", "Espagne"],
+                "answer": "Allemagne"
+              },
+              {
+                "category": "geographie",
+                "question": "Quelle est la capitale de la France?",
+                "options": ["Berlin", "Madrid", "Paris", "Londres"],
+                "answer": "Paris"
+              },
+              {
+                "category": "geographie",
+                "question": "A quel pays correspond ce drapeau?",
+                "options": ["Espagne", "Algérie", "Russie", "Canada"],
+                "answer": "Canada"
+              },
+              {
+                "category": "geographie",
+                "question": "Quelle est la plus grande île du monde?",
+                "options": ["Groenland", "Java", "Australie", "Bornéo"],
+                "answer": "Groenland"
+              },
+              {
+                "category": "nature",
+                "question": "Quel animal est souvent associé à la sagesse dans de nombreuses cultures?",
+                "options": ["Hibou", "Dauphin", "Serpent", "Lion"],
+                "answer": "Hibou"
+              },
+              {
+                "category": "nature",
+                "question": "Quel est le plus grand océan du monde?",
+                "options": ["Océan Atlantique", "Océan Indien", "Océan Pacifique", "Océan Arctique"],
+                "answer": "Océan Pacifique"
+              },
+              {
+                "category": "nature",
+                "question": "Quel est le plus grand serpent python?",
+                "options": ["Python réticulé", "Python royal", "Python birman", "Python molure"],
+                "answer": "Python réticulé"
+              }
+        ],
+        "moyen": [
+            {
+                "category": "histoire",
+                "question": "Quel dirigeant politique a dirigé l'Union soviétique pendant la majeure partie de la Seconde Guerre mondiale?",
+                "options": ["Joseph Staline", "Vladimir Lénine", "Nikita Khrouchtchev", "Leon Trotsky"],
+                "answer": "Joseph Staline"
+              },
+              {
+                "category": "histoire",
+                "question": "Quelle guerre a été appelée la 'Guerre de Cent Ans'?",
+                "options": ["Guerre entre Rome et Carthage", "Guerre entre la France et l'Angleterre", "Guerre entre la Grèce et la Perse", "Guerre entre l'Espagne et les Pays-Bas"],
+                "answer": "Guerre entre la France et l'Angleterre"
+              },
+              {
+                "category": "histoire",
+                "question": "Quelle machine de cryptage allemande utilisée pendant la Seconde Guerre mondiale était réputée inviolable jusqu'à ce qu'elle soit décryptée par les Alliés?",
+                "options": ["Caesar", "Enigma", "Atbash", "Vigenère"],
+                "answer": "Enigma"
+              },
+              {
+
+                "category": "cinema",
+                "question": "Qui a réalisé le film \"Inception\" en 2010?",
+                "options": ["Christopher Nolan", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
+                "answer": "Christopher Nolan"
+              },
+              {
+        
+                "category": "cinema",
+                "question": "Qui a réalisé le film \"The Shawshank Redemption\"?",
+                "options": ["Martin Scorsese", "Christopher Nolan", "Frank Darabont", "Steven Spielberg"],
+                "answer": "Frank Darabont"
+              },
+              {
+        
+                "category": "cinema",
+                "question": "De quel film est tiré l'image?",
+                "options": ["Leon", "Raging Bull", "Shining", "Avatar"],
+                "answer": "Raging Bulll"
+              },
+              {
+                "category": "sport",
+                "question": "Dans quel sport Michael Jordan a-t-il excellé?",
+                "options": ["Basketball", "Tennis", "Golf", "Football américain"],
+                "answer": "Basketball"
+              },
+              {
+        
+                "category": "sport",
+                "question": "Quel est le nom japonais de la garde du katana ?",
+                "options": ["Tsuba", "Kendo", "Kubishime", "Tsudo"],
+                "answer": "Kendo"
+              },
+              {
+                "category": "sport",
+                "question": "Qui détient le record du monde du marathon masculin en 2 heures, 1 minute et 39 secondes?",
+                "options": ["Eliud Kipchoge", "Usain Bolt", "Kenenisa Bekele", "Haile Gebrselassie"],
+                "answer": "Eliud Kipchoge"
+              },
+              {
+
+                "category": "geographie",
+                "question": "Quel est le plus grand lac d'Afrique, situé à la frontière de la Tanzanie et de l'Ouganda?",
+                "options": ["Lac Tanganyika", "Lac Malawi", "Lac Victoria", "Lac Turkana"],
+                "answer": "Lac Victoria"
+              },
+              {
+        
+                "category": "geographie",
+                "question": "Quelle est la plus longue rivière du monde?",
+                "options": ["Nil", "Amazone", "Mississippi", "Yangtsé"],
+                "answer": "Amazone"
+              },
+              {
+        
+                "category": "geographie",
+                "question": "Quelle île indonésienne est célèbre pour sa production de café, en particulier le café arabica?",
+                "options": ["Sumatra", "Bali", "Java", "Sulawesi"],
+                "answer": "Java"
+              },
+              {
+
+                "category": "nature",
+                "question": "Quelle est la plus grande forêt tropicale du monde?",
+                "options": ["Forêt amazonienne", "Forêt boréale", "Forêt de Bialowieza", "Forêt de Belovezhskaya Pushcha"],
+                "answer": "Forêt amazonienne"
+              },
+              {
+        
+                "category": "nature",
+                "question": "Quel animal est représenté sur cette image?",
+                "options": ["Axolott", "Okapi", "Chien", "Panda"],
+                "answer": "Okapi"
+              },
+              {
+        
+                "category": "nature",
+                "question": "A quel animal correspond ce son?",
+                "options": ["Chauve Souris", "Ours", "Hyène", "Lyrebird"],
+                "answer": "Lyrebird"
+              }
+        ],
+        "difficile": [
+            {
+                "category": "geographie",
+                "question": "Quel est le point le plus haut de la planète?",
+                "options": ["Mont Everest", "K2", "Annapurna", "Makalu"],
+                "answer": "Mont Everest"
+            },
+            {
+                "category": "geographie",
+                "question": "Quel est le point le plus bas de la Terre, situé dans la dépression de la mer Morte?",
+                "options": ["La fosse des Mariannes", "Le puits de Kola", "La dépression de Danakil", "Le point Challenger"],
+                "answer": "Le point Challenger"
+            },
+            {
+                "category": "geographie",
+                "question": "Quel est le point le plus éloigné de la surface terrestre par rapport à son centre, souvent considéré comme le sommet le plus élevé du monde?",
+                "options": ["Mont Everest", "Mauna Kea", "Kangchenjunga", "Mont Chimborazo"],
+                "answer": "Mont Chimborazo"
+            },
+            {
+                "category": "histoire",
+                "question": "Quelle bataille a été un tournant décisif dans la Guerre du Pacifique pendant la Seconde Guerre mondiale, marquant la défaite japonaise?",
+                "options": ["Bataille de Midway", "Bataille d'Iwo Jima", "Bataille de Guadalcanal", "Bataille d'Okinawa"],
+                "answer": "Bataille de Midway"
+            },
+            {
+                "category": "histoire",
+                "question": "En quelle année Ariobarzane III de Cappadoce est-il décédé?",
+                "options": ["43 av. J.-C.", "82 av. J.-C.", "112 av. J.-C.", "59 av. J.-C."],
+                "answer": "42 av. J.-C."
+            },
+            {
+                "category": "histoire",
+                "question": "Quel explorateur portugais a été le premier à atteindre l'Inde par voie maritime?",
+                "options": ["Christophe Colomb", "Ferdinand Magellan", "Vasco de Gama", "Amerigo Vespucci"],
+                "answer": "Vasco de Gama"
+            },
+            {
+                "category": "cinema",
+                "question": "Quel acteur a remporté l'Oscar du meilleur acteur pour son rôle dans \"The Revenant\" en 2016?",
+                "options": ["Leonardo DiCaprio", "Joaquin Phoenix", "Matthew McConaughey", "Eddie Redmayne"],
+                "answer": "Leonardo DiCaprio"
+              },
+              {
+                "category": "cinema",
+                "question": "Quel acteur a remporté l'Oscar du meilleur acteur pour son rôle dans \"The Godfather\"?",
+                "options": ["Al Pacino", "Marlon Brando", "Robert De Niro", "Jack Nicholson"],
+                "answer": "Marlon Brando"
+              },
+              {
+                "category": "cinema",
+                "question": "Dans l'adaptation cinématographique du \"Guide du voyageur galactique\", quel est le superordinateur extraterrestre chargé de trouver la réponse à la vie, à l'univers et à tout?",
+                "options": ["Deep Thought", "Marvin", "Zaphod Beeblebrox", "Slartibartfast"],
+                "answer": "Deep Thought"
+              },
+              {
+                "category": "sport",
+                "question": "Quelle équipe a remporté la Coupe du Monde de la FIFA en 2018?",
+                "options": ["France", "Croatie", "Brésil", "Allemagne"],
+                "answer": "France"
+              },
+              {
+                "category": "sport",
+                "question": "Qui détient le record du monde du saut en hauteur masculin?",
+                "options": ["Javier Sotomayor", "Stefan Holm", "Mutaz Essa Barshim", "Dick Fosbury"],
+                "answer": "Javier Sotomayor"
+              },
+              {
+                "category": "sport",
+                "question": "A quel sport correspond cette image?",
+                "options": ["Polo", "Golf", "Sepak Takraw", "Hornussen"],
+                "answer": "Sepak Takraw"
+              },
+              {
+                "category": "nature",
+                "question": "Quelle espèce d'oiseau est capable de voler en arrière?",
+                "options": ["Colibri", "Aigle", "Corbeau", "Pigeon"],
+                "answer": "Colibri"
+              },
+              {
+                "category": "nature",
+                "question": "Quel est le plus grand organisme vivant sur Terre?",
+                "options": ["Baleine bleue", "Séquoia géant", "Mycélium de champignon", "Éléphant africain"],
+                "answer": "Mycélium de champignon"
+              },
+              {
+                "category": "nature",
+                "question": "Où se situe l'endroit représenté sur la photo?",
+                "options": ["Sur l'île d'Oléron", "Sur l'Archipel de Bréhat", "Sur l'île de Ré", "En Corse"],
+                "answer": "Sur l'Archipel de Bréhat"
+              }
+            
+        ]
+    }
+}

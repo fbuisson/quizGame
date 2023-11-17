@@ -1,16 +1,26 @@
-const buttons = document.getElementsByClassName("btn")
-const levelSelected = "";
+const express = require('express');
+const cors = require('cors');
+const fs = require('fs');
+const app = express();
+const port = 3000; // Vous pouvez choisir un autre port si nécessaire
 
-const removeClass = (items, classTag) => {
-    for( let i = 0 ; i < items.length ; i++ ){
-        buttons[i].classList.remove(classTag)
-    }
-}
+app.use(cors());
 
-for( let i = 0 ; i < buttons.length ; i++ ){
-    buttons[i].addEventListener("click", () => {
-        removeClass(buttons, "active")
-        buttons[i].classList.add("active")
-        if ( buttons[i].classList.contains("btn-circle")) levelSelected = i === 0 ? "Facile" : i === 1 ? "Moyen" : "Difficile"
-    })
-}
+app.get('/getQuestions', (req, res) => {
+    fs.readFile('./pages/quiz/questionList.json', 'utf8', (error, data) => {
+        if (error) {
+            res.status(500).send("Erreur lors de la lecture du fichier");
+            return;
+        }
+        try {
+            const obj = JSON.parse(data);
+            res.json(obj);
+        } catch (parseError) {
+            res.status(500).send("Erreur lors de l'analyse du JSON");
+        }
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Serveur démarré sur http://localhost:${port}`);
+});
