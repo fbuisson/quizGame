@@ -1,7 +1,7 @@
 const TIMER_DURATION = 10000; // 30 secondes
 
 let questions = [];
-let questionNumber = 14
+let questionNumber = 1
 let answered = false
 let answer = ""
 let score = 0;
