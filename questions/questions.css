@@ -18,9 +18,11 @@
 }
 
 body {
+    color: var(--text-color);
     height: 100vh;
     text-align: center;
     background: url(/doc/background/bc.webp);
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -107,7 +109,11 @@ main {
     align-items: center;
 }
 
-.categoryConatiner {
+/* category logo 
+    add class nature / cinema /sport/geo /hitory
+    display none --> display block + bc colored
+*/
+.categoryContainer {
     height: 40px;
     width: 200px;
 
@@ -168,6 +174,8 @@ main {
     }
 }
 
+
+/* progressbar */
 .timerBar {
     margin: 20px;
     width: 90%;
@@ -191,6 +199,8 @@ main {
 
 }
 
+/* questions */
+
 .questionContainer {
     width: 100%;
 }
@@ -210,13 +220,56 @@ main {
     }
 }
 
-button.btn-square.green {
+/* Button red */
+/* =========================== */
+button.btn-square.btn-red {
     border-radius: 0.75em;
     padding: 1.25em 2em;
+    background: rgb(207, 5, 5);
+}
+
+button.btn-square.btn-red::before {
+    transform: translate3d(0, 0.75em, -1em);
+    background: darkred;
+}
+
+
+button.btn-square.btn-red:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-square.active.btn-red {
+    background: darkred;
+    transform: translate(0em, 0.75em);
+}
+
+button.btn-square.active.btn-red::before {
+    transform: translate3d(0, 0, -1em);
+}
+
+/* Button green */
+/* =========================== */
+button.btn-square.btn-green {
+    border-radius: 0.75em;
+    padding: 1.25em 2em;
+    background: green;
+}
+
+button.btn-square.btn-green::before {
+    transform: translate3d(0, 0.75em, -1em);
     background: darkgreen;
 }
 
-button.btn-square.active {
-    background: darkred;
+
+button.btn-square.btn-green:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.btn-square.active.btn-green {
+    background: darkgreen;
     transform: translate(0em, 0.75em);
+}
+
+button.btn-square.active.btn-green::before {
+    transform: translate3d(0, 0, -1em);
 }
