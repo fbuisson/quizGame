@@ -14,7 +14,6 @@ let questions = [{
 
 const questionDisplayer = function () {
 
-
     const categoryContainer = document.querySelector('div.categoryContainer');
 
     document.querySelector('span.difficultySpan').textContent = questions[questionsIndex].difficutly == "hard" ? "Difficile" : questions[questionsIndex].difficutly == "medium" ? "Moyen" : "Facile";

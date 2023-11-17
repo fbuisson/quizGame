@@ -295,7 +295,6 @@ button.btn-square.btn-red::before {
     background: darkred;
 }
 
-
 button.btn-square.btn-red:hover::before {
     transform: translate3d(0, 0.5em, -1em);
 }
